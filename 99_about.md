@@ -15,3 +15,5 @@ It's an easy way to write documentation. Who needs crazy tags when you can write
 ##How to push your changes
 
     git push
+
+Github will complile and update the site files
