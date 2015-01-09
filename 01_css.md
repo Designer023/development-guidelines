@@ -170,44 +170,3 @@ These should NEVER BE USED FOR STYLES. You can apply styles to a class that is a
     <ul class=”js-menu-target is-active”>...I’m a menu</ul>
 
 The javascript should add/remove the .is-active class and that should be styled. The .js-menu-target is only for the javascript.
-
-#Sass
-Sass makes some of the above easier. It automates the tedious
-
-##Javascript
-
-#HTML
-
-##Development setups
-
-There are a number of ways that 
-
-##Gulp
-
-##Grunt
-
-##Codekit
-
-
-#Frameworks
-
-To keep things simple only common frameworks are used, however these should be used with caution as everyone is not as experienced with these
-
-- Bootstrap
-- Foundation 
-
-#REFERENCE
-
-##Tools
-###Speed and general testing
-http://www.webpagetest.org
-http://tools.pingdom.com/fpt/
-http://nibbler.silktide.com
-
-###Validation
-http://validator.w3.org/
-
-
-###CSS guidelines:
-
-http://cssguidelin.es/
