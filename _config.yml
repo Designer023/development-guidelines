@@ -1,12 +1,12 @@
 # Site settings
 title: Designer Code Best Practices
-
-description: > # this means to ignore newlines until "baseurl:"
-  A guide to keep code styles and practices focused
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://designer023.github.io/development-guidelines/" # the base hostname & protocol for your site
 twitter_username: designer023
 github_username:  designer023
 
 # Build settings
 markdown: kramdown
+
+
+name: Designer Code Best Practices
+highlighter: true
+baseurl: /development-guidelines
