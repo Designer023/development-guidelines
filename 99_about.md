@@ -14,4 +14,4 @@ It's an easy way to write documentation. Who needs crazy tags when you can write
 
 ##How to push your changes
 
-Hello Will
+   git push
