@@ -1,0 +1,12 @@
+# Site settings
+title: Designer Code Best Practices
+twitter_username: designer023
+github_username:  designer023
+
+# Build settings
+markdown: kramdown
+
+
+name: Designer Code Best Practices
+highlighter: true
+baseurl: /development-guidelines
