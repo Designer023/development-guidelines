@@ -29,7 +29,7 @@ permalink: /prelaunch/
 ###Windows phone devices
 
 
-##Usibility testing
+##Usability testing
 
 - Make sure the page is usable for all users (e.g. visual contract and alt tags) [http://achecker.ca/checker/index.php](http://achecker.ca/checker/index.php)
 
