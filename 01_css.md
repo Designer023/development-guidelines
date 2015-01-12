@@ -57,6 +57,11 @@ NEVER hook styles onto an #ID...EVER. It’s too specific http://cssguidelin.es/
     .my-thing { color: red  }
     .my-thing { color: blue !important; }
 
+Check the specificity of your CSS. It should be a flat line or a gentle incline from left to right with minimal spikes. Spikes should be towards the right/end.
+
+- http://csswizardry.com/2014/10/the-specificity-graph/
+- http://jonassebastianohlsson.com/specificity-graph/
+
 ##Commenting your code
 
 - If you have to think about it then it should be commented.
