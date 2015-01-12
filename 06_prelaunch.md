@@ -54,7 +54,7 @@ permalink: /prelaunch/
 - [http://yslow.org/](http://yslow.org/) - Get a high score on YSlow: 
 - [https://developers.google.com/speed/pagespeed/insights/](https://developers.google.com/speed/pagespeed/insights/) - Get a high score on Pagespeed Insights:
 - [http://www.webpagetest.org/](http://www.webpagetest.org/) - Get all A’s or B’s on Web page test:
-- [http://tools.pingdom.com/fpt/] - http://tools.pingdom.com/fpt/ - Get a high score on Pingdom:
+- [http://tools.pingdom.com/fpt/](http://tools.pingdom.com/fpt/) - Get a high score on Pingdom:
 
 #Multiple disciplines tests
 
