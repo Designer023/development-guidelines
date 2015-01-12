@@ -19,6 +19,6 @@ As such the following is necessary:
 - Code needs to be scalable
 - New starters need a strict set of guidelines to work to and be held to so that there is no creep in the styling
 
+This will cover all technologies and methodolgies that are used, but the principals should apply to other topics that aren't covered here.
 
-This should apply across all our technologies used, but in this scope it will focus on just the stylesheets, HTML and Javascript.
-
+Please read the about page for instructions on how to update this documenation.
