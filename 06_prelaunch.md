@@ -56,13 +56,10 @@ permalink: /prelaunch/
 - [http://www.webpagetest.org/](http://www.webpagetest.org/) - Get all A’s or B’s on Web page test:
 - [http://tools.pingdom.com/fpt/](http://tools.pingdom.com/fpt/) - Get a high score on Pingdom:
 
-#Multiple disciplines tests
-
-- [http://nibbler.silktide.com/](http://nibbler.silktide.com/) - Get high score on Nibler. This is great for giving a good overview to aspects such as code and social recognition, along side other wider ranged metrics.
-
-
 ##SEO
 
-- See Nibler above. This is a good all round test for things that may affect SEO
+- [http://www.woorank.com/](http://www.woorank.com/) - Rate site on useful SEO metrics **PAID**
+- [http://www.seowebpageanalyzer.com/](http://www.seowebpageanalyzer.com/) - Covers the basic areas of SEO.
+- [http://nibbler.silktide.com/](http://nibbler.silktide.com/) - Get high score on Nibler. This is great for giving a good overview to aspects such as code and social recognition, along side other wider ranged metrics.
 
 ##Other
