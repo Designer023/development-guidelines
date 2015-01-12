@@ -3,9 +3,9 @@ layout: page
 title: Environments
 permalink: /environments/
 ---
+##Environments
 
-
-##Vagrant
+###Vagrant
 
 Suitable for:
 
@@ -18,16 +18,21 @@ Complexity:
 
 - Hard but easy once you know how
 
+**How work with Vagrant
 
-##Virtualenv
+###Virtualenv
 
 - Django/Python
+
+You will need a virtual environment in which to run a Python/Django site.
+
+**How to create a virtual environment
 
 Complexity:
 
 - Medium but easy once you know how
 
-##LAMP Stack
+###LAMP Stack
 
 - PHP
 - HTML
@@ -35,3 +40,5 @@ Complexity:
 Complexity:
 
 - Easy
+
+**How work with LAMP stack
