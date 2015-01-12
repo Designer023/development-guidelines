@@ -34,7 +34,7 @@ Don’t be specific If you have more than 3 nested classes then it’s too speci
 
     .my-main-thing .my-sub-thing .my-space .my-thing { … }
 
-NEVER hook styles onto an #ID...EVER. It’s too specific http://cssguidelin.es/#ids-in-css. You can still use an #ID for hooking javascript but styles can’t be attached.
+NEVER hook styles onto an #ID...EVER. [It’s too specific](http://cssguidelin.es/#ids-in-css). You can still use an #ID for hooking javascript but styles can’t be attached.
 
 **Yes**
 
@@ -59,8 +59,8 @@ NEVER hook styles onto an #ID...EVER. It’s too specific http://cssguidelin.es/
 
 Check the specificity of your CSS. It should be a flat line or a gentle incline from left to right with minimal spikes. Spikes should be towards the right/end.
 
-- http://csswizardry.com/2014/10/the-specificity-graph/
-- http://jonassebastianohlsson.com/specificity-graph/
+- [http://csswizardry.com/2014/10/the-specificity-graph/](http://csswizardry.com/2014/10/the-specificity-graph/)
+- [http://jonassebastianohlsson.com/specificity-graph/](http://jonassebastianohlsson.com/specificity-graph/)
 
 ##Commenting your code
 
@@ -77,7 +77,7 @@ There is no overall structure to the css. This is ok on small sites/microsites.
 
 
 ###BEM
-http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/
+[http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)
 
 A block consist of elements such as headers, search bars, primary navigation, widgets, list panels etc. Basically anything that can be a stand alone item. The block should be named something sensible and relevant but not a stupidly long name like .this-is-the-block-where-the-results-sit-in. try something like .events-list assuming there is no other event list blocks. If there is then make it a little more specific so there is no name clash!
 
@@ -171,7 +171,7 @@ Utility classes are used for more global styling. Ideally they should be prefixe
 
 These should NEVER BE USED FOR STYLES. You can apply styles to a class that is added via javascript, but anything that is for js to hook onto MUST NOT HAVE STYLES RELATED TO THE CLASS.
 
-    <span class=”js-menu-toggle”>Menu</span>
-    <ul class=”js-menu-target is-active”>...I’m a menu</ul>
+    <span class='js-menu-toggle'>Menu</span>
+    <ul class='js-menu-target is-active'>...I’m a menu</ul>
 
 The javascript should add/remove the .is-active class and that should be styled. The .js-menu-target is only for the javascript.
