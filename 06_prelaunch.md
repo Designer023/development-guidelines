@@ -41,9 +41,9 @@ permalink: /prelaunch/
 ###Workflow
 
 - CDN hosted assets which are GZipped
-- Progressive jpgs and are crushed to a suitable level.
+- Progressive jpgs and pngs are crushed to a suitable level.
 - With expires set a good long time into the future.
-- Concatenated js and css where possible for minimal requests
+- Minified, linted and concatenated js and css where possible for minimal requests
 - [DNS prefetching](http://www.htmlgoodies.com/beyond/webmaster/how-your-browser-speeds-up-cross-domain-loading-using-dns-prefetching.html)
 - Lazy loading of images to reduce initial page weight
 - Inline javascript in header if small enough
@@ -55,7 +55,7 @@ permalink: /prelaunch/
 ####Speed & quality tests
 
 - [http://yslow.org/](http://yslow.org/) - Get a high score on YSlow: 
-- [https://developers.google.com/speed/pagespeed/insights/](https://developers.google.com/speed/pagespeed/insights/) - Get a high score on Pagespeed Insights:
+- [https://developers.google.com/speed/pagespeed/insights/](https://developers.google.com/speed/pagespeed/insights/) - Get a high score on Pagespeed Insights. You need to be aiming for 90+.
 - [http://www.webpagetest.org/](http://www.webpagetest.org/) - Get all A’s or B’s on Web page test:
 - [http://tools.pingdom.com/fpt/](http://tools.pingdom.com/fpt/) - Get a high score on Pingdom:
 
