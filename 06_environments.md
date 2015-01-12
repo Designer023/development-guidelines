@@ -18,7 +18,7 @@ Complexity:
 
 - Hard but easy once you know how
 
-**How work with Vagrant
+**How work with Vagrant**
 
 ###Virtualenv
 
@@ -26,7 +26,7 @@ Complexity:
 
 You will need a virtual environment in which to run a Python/Django site.
 
-**How to create a virtual environment
+**How to create a virtual environment**
 
 Complexity:
 
@@ -41,4 +41,4 @@ Complexity:
 
 - Easy
 
-**How work with LAMP stack
+**How work with LAMP stack**
