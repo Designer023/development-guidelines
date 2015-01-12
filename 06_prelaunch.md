@@ -9,6 +9,8 @@ permalink: /prelaunch/
 
 ###HTML
 
+- [http://validator.w3.org/](http://validator.w3.org/)
+
 ###CSS
 
 
@@ -32,6 +34,7 @@ permalink: /prelaunch/
 ##Usability testing
 
 - Make sure the page is usable for all users (e.g. visual contract and alt tags) [http://achecker.ca/checker/index.php](http://achecker.ca/checker/index.php)
+- Check the pages using a bookmarklet - [http://squizlabs.github.io/HTML_CodeSniffer/](http://squizlabs.github.io/HTML_CodeSniffer/)
 
 ##Optimization
 
@@ -49,7 +52,7 @@ permalink: /prelaunch/
 
 ###Tests and services
 
-####Speed tests
+####Speed & quality tests
 
 - [http://yslow.org/](http://yslow.org/) - Get a high score on YSlow: 
 - [https://developers.google.com/speed/pagespeed/insights/](https://developers.google.com/speed/pagespeed/insights/) - Get a high score on Pagespeed Insights:
