@@ -33,7 +33,7 @@ permalink: /prelaunch/
 
 ##Optimization
 
-- (http://yslow.org/)[http://yslow.org/] Get a high score on YSlow: 
+- [http://yslow.org/](http://yslow.org/) Get a high score on YSlow: 
 
 
 Get a high score on Pagespeed Insights:
