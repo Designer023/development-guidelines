@@ -58,12 +58,11 @@ permalink: /prelaunch/
 
 #Multiple disciplines tests
 
-- [http://nibbler.silktide.com/] - Get high score on Nibler. This is great for giving a good overview to aspects such as code and social recognition, along side other wider ranged metrics.
-
+- [http://nibbler.silktide.com/](http://nibbler.silktide.com/) - Get high score on Nibler. This is great for giving a good overview to aspects such as code and social recognition, along side other wider ranged metrics.
 
 
 ##SEO
 
-
+- See Nibler above. This is a good all round test for things that may affect SEO
 
 ##Other
