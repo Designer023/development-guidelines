@@ -60,11 +60,17 @@ Should finish with a semi-colon. Older browsers will fall over if you don't do t
 #Writing efficient code
 
 If you have to write something more than once it should be a variable or a function. This makes your code clear and maintainable. 
-
+    
+     //The slide update functionallity is in only one place
     function update_slides() {
       //Logic to update slides...
-      //in one place to update only!
+      
+      //Logic to update index can be in the same place to keep it neat or it can reference it's own unique function too!
     }
+    
+    
+    //The handinling of slide navigation is broken down into unique functions.
+    //These can now be called by timers, navigation clicks on arrows or indices or anything else.
     
     function next_slide() {
       current_slide++;
@@ -82,7 +88,6 @@ If you have to write something more than once it should be a variable or a funct
       update_slides();
     }
     
-    
     function goto_slide(slide_num) {
       //Constrain the slide within the range available.
       if (current_slide < 1) {
@@ -91,5 +96,14 @@ If you have to write something more than once it should be a variable or a funct
         current_slide = 1;
       }
       update_slides();
-    }
+     }
+     
+     //Rest of the app
+     $('.next').on('click', function(e) {
+        //now we can just call that function when needed. It does the rest! 
+        next_slide();
+        e.preventDefault(); //stops default action of clicking things.
+     });
+     
+     ...
 
