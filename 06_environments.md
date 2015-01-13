@@ -3,9 +3,8 @@ layout: page
 title: Environments
 permalink: /environments/
 ---
-##Environments
 
-###Vagrant
+##Vagrant
 
 Suitable for:
 
@@ -20,19 +19,32 @@ Complexity:
 
 **How work with Vagrant**
 
-###Virtualenv
+##Virtualenv
 
 - Django/Python
 
 You will need a virtual environment in which to run a Python/Django site.
 
-**How to create a virtual environment**
+###How to create a virtual environment
 
-Complexity:
+####Per machine
 
-- Medium but easy once you know how
+    #Install virtualenv on your local machine
+    pip install https://github.com/pypa/virtualenv/tarball/1.9.X
 
-###LAMP Stack
+####Per project
+
+    #Create wrapper for this project
+    virtualenv env-name
+
+####Everytime
+
+    source env-name/bin/activate
+    #prompt will change to prepend the environment name
+    (envname)$
+
+
+##LAMP Stack
 
 - PHP
 - HTML
