@@ -34,14 +34,20 @@ You will need a virtual environment in which to run a Python/Django site.
 
 ####Per project
 
+virtualenv creates a folder that has the name of the environment you specify below. It's best to keep envs with the projects so use a similar folder structure to the following:
+
+     |project-name <-- navigate to this folder when you create your env
+     |----project-repo
+     |----project-env
+
     #Create wrapper for this project
-    virtualenv env-name
+    virtualenv project-env
 
 ####Everytime
 
-    source env-name/bin/activate
+    source project-env/bin/activate
     #prompt will change to prepend the environment name
-    (envname)$
+    (project-env)$
 
 
 ##LAMP Stack
