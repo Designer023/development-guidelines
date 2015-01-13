@@ -87,7 +87,7 @@ The second example looks more code, but imagine that this both examples are spre
         if (current_slide > MAX_SLIDES) {
             current_slide = 1;
         }
-        next_slide();
+        //Logic to update slides...
         e.preventDefault(); //stops default action of clicking things.
      });
      
@@ -96,7 +96,7 @@ The second example looks more code, but imagine that this both examples are spre
         if (current_slide > MAX_SLIDES) {
             current_slide = 1;
         }
-        next_slide();
+        //Same logic to update slides...
         e.preventDefault(); //stops default action of clicking things.
      });
      
@@ -105,7 +105,7 @@ The second example looks more code, but imagine that this both examples are spre
         if (current_slide > MAX_SLIDES) {
             current_slide = 1;
         }
-        next_slide();
+        //Same logic to update slides...
         e.preventDefault(); //stops default action of clicking things.
      });
    
