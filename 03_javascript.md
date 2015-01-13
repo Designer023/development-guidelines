@@ -80,6 +80,8 @@ The second example looks more code, but imagine that this both examples are spre
 
 ##Functions
 
+###No
+
      $('.next').on('click', function(e) {
         current_slide++;
         if (current_slide > MAX_SLIDES) {
