@@ -60,6 +60,55 @@ Should finish with a semi-colon. Older browsers will fall over if you don't do t
 #Writing efficient code
 
 If you have to write something more than once it should be a variable or a function. This makes your code clear and maintainable. 
+
+##Variables
+
+###No
+
+     $('.thing').on('click' function() { ... });
+     $('.thing').on('tap' function() { ... });
+     $('.thing').on('swipe' function() { ... });
+
+###Yes
+    
+     var THING = $('.thing');
+     THING.on('click' function() { ... });
+     THING.on('tap' function() { ... });
+     THING.on('swipe' function() { ... });
+
+The second example looks more code, but imagine that this both examples are spread over a massive plugin you just wrote. Now I know this **never happens** but what if you happen to change the class of `.thing` to `.other-thing`. Just thing of the chance of missing one, or a typo or anything else. Hello bugs and broken plugin. Now what is easier to maintain?
+
+##Functions
+
+     $('.next').on('click', function(e) {
+        current_slide++;
+        if (current_slide > MAX_SLIDES) {
+            current_slide = 1;
+        }
+        next_slide();
+        e.preventDefault(); //stops default action of clicking things.
+     });
+     
+     $('.next').on('swipe-right', function(e) {
+        current_slide++;
+        if (current_slide > MAX_SLIDES) {
+            current_slide = 1;
+        }
+        next_slide();
+        e.preventDefault(); //stops default action of clicking things.
+     });
+     
+     $('.index').on('click', function(e) {
+        current_slide++;
+        if (current_slide > MAX_SLIDES) {
+            current_slide = 1;
+        }
+        next_slide();
+        e.preventDefault(); //stops default action of clicking things.
+     });
+   
+
+###Yes
     
      //The slide update functionallity is in only one place
     function update_slides() {
