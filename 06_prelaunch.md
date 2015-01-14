@@ -5,6 +5,15 @@ permalink: /prelaunch/
 ---
 
 
+Code should be valid and render in browsers bug free. For older browsers the content should still be readable even if the styles don't display 100% correctly. 
+
+Colours and buttons should be readable as per usibility standards for the project.
+
+SEO depends highy on speeds and the correct format of the HTML document. Check these using tools like Yslow and pagespeed insights.
+
+To cover mobile devices and slow connections all assets should be as minimal as possible and any extra content should be loaded lazily or asynchronously. 
+
+
 ##Validation
 
 ###HTML
