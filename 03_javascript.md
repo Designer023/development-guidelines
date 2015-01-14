@@ -19,10 +19,11 @@ That can vary from project to project but a rule of thumb would be:
 
 - jQuery. Nothing essential should be using jQuery.
 - Everything else like galleries and slider js, social js etc.
+- Analytics. I know it says put it in the head, but a quicker page is a happier user and a more accurate stat. A quicker stat is a slower site and unhappy user (who might then leave).
 
 #How many js files should there be.
 
-For a normal site there should be 2 js files that are loaded for the whole site. There may be more specific files that are loaded for certain pages or sections of a site.
+For a normal site there should be 2 js files that are loaded for the whole site. The header.js and the footer.js. That's it! Call them what you like! There may be more specific files that are loaded for certain pages or sections of a site.
 
 ##header.js
 
@@ -157,4 +158,45 @@ The second example looks more code, but imagine that this both examples are spre
      });
      
      ...
+
+
+#How to write a javascript class
+
+A class is a code template for creating objects that provides initial values and functions and can be extended to create new classes. There are more than 1 way to make a class in javascript. Best stick to one, as follows. Note the CamelCase Style for the class name.
+
+
+    /* @class Playlist */
+    //
+    function Playlist(name, tracks) {
+      this.name = name || 'my playlist';
+      this.tracks = tracks || [];
+    }
+
+    //By using prototype we don't have to duplicate core object functions
+    //meaning lower overheads and quicker code
+    Playlist.prototype = {};
+    
+    //Add functionallity with functions for the class
+    Playlist.prototype.addTrack = function(track) {
+      this.tracks.push(track);
+    };
+
+    Playlist.prototype.getTrackList = function(format) {
+       if (typeof format !== 'undefined' ) {
+          return this.tracks.join(format);
+        } else {
+          return this.tracks;
+        };
+    };
+
+    /* End @class MyClassName */
+    
+
+    //Now we have the class we can use it
+    //make a new Playlist object using the Playlist class
+    var my_playlist = new PlayList('Such Wow');
+    //add a track to the list
+    my_playlist.addTrack(1234567890);
+    //print the tracklist to the console
+    console.log( my_playlist.getTrackList() );
 
