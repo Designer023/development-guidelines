@@ -165,6 +165,7 @@ The second example looks more code, but imagine that this both examples are spre
 A class is a code template for creating objects that provides initial values and functions and can be extended to create new classes. There are more than 1 way to make a class in javascript. Best stick to one, as follows. Note the CamelCase Style for the class name.
 
 
+    
     /* @class Playlist */
     //
     function Playlist(name, tracks) {
@@ -187,7 +188,7 @@ A class is a code template for creating objects that provides initial values and
           return this.tracks.join(format);
         } else {
           return this.tracks;
-        };
+        }
     };
 
     /* End @class MyClassName */
@@ -195,9 +196,18 @@ A class is a code template for creating objects that provides initial values and
 
     //Now we have the class we can use it
     //make a new Playlist object using the Playlist class
-    var my_playlist = new PlayList('Such Wow');
+    var my_playlist = new Playlist('Such Wow', 99);
     //add a track to the list
     my_playlist.addTrack(1234567890);
     //print the tracklist to the console
     console.log( my_playlist.getTrackList() );
 
+
+[Read more about prototypes](http://sporto.github.io/blog/2013/02/22/a-plain-english-guide-to-javascript-prototypes/) and why they are useful and get your head around the concept.
+
+#Validating code
+
+To make sure your code is nice use a validator. jshint.com is usually good enough, but if you want a challenge go with jslint.com
+
+- [http://jshint.com/](http://jshint.com/) - Shows bad code but not bad formatting.
+- [http://www.jslint.com/](http://www.jslint.com/) - A bit more picky. Spaces and indents are a fail!
