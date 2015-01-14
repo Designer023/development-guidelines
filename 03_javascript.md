@@ -173,7 +173,8 @@ A class is a code template for creating objects that provides initial values and
     }
 
     //By using prototype we don't have to duplicate core object functions
-    //meaning lower overheads and quicker code
+    //requests for functions and properties are passed up the protostupe chain
+    //meaning less duplication of code
     Playlist.prototype = {};
     
     //Add functionallity with functions for the class
