@@ -41,20 +41,20 @@ Make your changes and commit them.
     
     git commit -am 'updated the docs specific text here'
 
-Merge the updated `gh-pages` branch with yours and then if there are no conflicts merge yours with `gh-pages`   
+Merge the updated `gh-pages` branch with yours, fix any conflicts, and then merge yours with `gh-pages`   
 
     git checkout gh-pages
     git pull
     git checkout my-new-branch
     git merge gh-pages
     
-Now your branch is upto date with `gh-pages` and you can merge and push your changes.
+Now your branch is up to date with `gh-pages` and you can merge and push your changes.
     
     git checkout gh-pages
     git merge my-new-branch
     git push
 
-Github will complile and update the site files and the site will update.
+Github will compile and update the site files.
 
 
 ###What is Markdown
