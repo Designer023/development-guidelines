@@ -6,9 +6,9 @@ permalink: /javascript/
 
 #Where to put the javascript?
 
-Unless it's essential for it to be in the head of the HTML document it should be placed just before the closing body tag of a page.
+Unless it's essential for it to be in the <head> of the HTML document, place all javascriptvjust before the closing body tag of a page.
 
-##What's essential for the head?
+##What's essential for the <head>?
 
 That can vary from project to project but a rule of thumb would be:
 
@@ -27,12 +27,11 @@ For a normal site there should be 2 js files that are loaded for the whole site.
 
 ##header.js
 
-Contains the header javascript that contains things like Modernizr. This can be created by concatonating (joining together) lots of smaller js.
+Contains the header javascript that contains things like Modernizr. This can be created by concatenating (joining together) lots of smaller js files.
 
 ##footer.js
 
-Contains everything else that is global js. Concatonated from other js files like jQuery/Zepto and other plugins and libraries. They should be conactonated in  a logical order staring with the biggest libraries, then plugins and then the callbacks to activate the plugins.
-
+Contains everything else that is global js. Concatenated from other js files like jQuery/Zepto and other plugins and libraries. They should be conactenated in a logical order, starting with the biggest libraries, then plugins and then the callbacks to activate the plugins.
 
 #Writing style
 
@@ -44,7 +43,7 @@ Things that can change once the code is running e.g. counters. These should be l
 
 ##Constants
 
-Are variables to but they are ones that stay the same e.g. A DOM element that won't change.
+Are variables too but they are ones that stay the same e.g. A DOM element that won't change.
 
    var CONSTANT_THING = 'I never change! I am a rock.';
 
@@ -77,7 +76,7 @@ If you have to write something more than once it should be a variable or a funct
      THING.on('tap' function() { ... });
      THING.on('swipe' function() { ... });
 
-The second example looks more code, but imagine that this both examples are spread over a massive plugin you just wrote. Now I know this **never happens** but what if you happen to change the class of `.thing` to `.other-thing`. Just thing of the chance of missing one, or a typo or anything else. Hello bugs and broken plugin. Now what is easier to maintain?
+The second example looks more code, but imagine that this both examples are spread over a massive plugin you just wrote. Now I know this **never happens** but what if you happen to change the class of `.thing` to `.other-thing`. Reduce the possibility of missing one instance of your variable, and of making a typo. You're lining yourself up for bugs and broken plugin. Choose the option that is easier to maintain.
 
 ##Functions
 
@@ -121,7 +120,7 @@ The second example looks more code, but imagine that this both examples are spre
     }
     
     
-    //The handinling of slide navigation is broken down into unique functions.
+    //The handling of slide navigation is broken down into unique functions.
     //These can now be called by timers, navigation clicks on arrows or indices or anything else.
     
     function next_slide() {
@@ -162,9 +161,7 @@ The second example looks more code, but imagine that this both examples are spre
 
 #How to write a javascript class
 
-A class is a code template for creating objects that provides initial values and functions and can be extended to create new classes. There are more than 1 way to make a class in javascript. Best stick to one, as follows. Note the CamelCase Style for the class name.
-
-
+A class is a code template for creating objects that provides initial values and functions and can be extended to create new classes. There is more than one way to make a class in javascript. Best stick to one, as follows. Note the CamelCase Style for the class name.
     
     /* @class Playlist */
     //
@@ -207,7 +204,7 @@ A class is a code template for creating objects that provides initial values and
 
 #Validating code
 
-To make sure your code is nice use a validator. jshint.com is usually good enough, but if you want a challenge go with jslint.com
+To make sure your code is nice, use a validator. jshint.com is usually good enough, but if you want a challenge go with jslint.com
 
 - [http://jshint.com/](http://jshint.com/) - Shows bad code but not bad formatting.
 - [http://www.jslint.com/](http://www.jslint.com/) - A bit more picky. Spaces and indents are a fail!
