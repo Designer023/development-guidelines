@@ -22,7 +22,10 @@ There are a few ways of writing css. For consistency we will adopt only one nami
 
 ##Specificity
 
-Don’t be specific If you have more than 3 nested classes then it’s too specific! This is hard to override for other classes and will bloat the css. 
+Keep your selectors short and with as low a specificity as possible. A maximum of three classes in your selectors is recommended. Why? Two reasons:
+
+- Selectors with a high specificity can be time consuming to override
+- long selectors can bloat your css. 
 
 **Yes**
 
@@ -34,7 +37,9 @@ Don’t be specific If you have more than 3 nested classes then it’s too speci
 
     .my-main-thing .my-sub-thing .my-space .my-thing { … }
 
-NEVER hook styles onto an #ID...EVER. [It’s too specific](http://cssguidelin.es/#ids-in-css). You can still use an #ID for hooking javascript but styles can’t be attached.
+Do not include one or mote #ID's in your selectors...EVER. [It’s too specific](http://cssguidelin.es/#ids-in-css). Use #ID with javascript ... but not styles.
+
+So you like namespacing with #ID's? Cool...namespacing is good, just do it with a class instead.
 
 **Yes**
 
@@ -44,7 +49,10 @@ NEVER hook styles onto an #ID...EVER. [It’s too specific](http://cssguidelin.e
 
     #my-thing { … }
 
-!important is only ok for some things like error messages that always display in one way and have to show in red bold. We don’t have a !superimportant so if you have to use !important to override something else then the something else is too specific to start with. Go back and unspecify the other code, please don’t add more specificity. It’s hard to override an !important for a reason and it’s meant to be used to make sure a rule works as it should. It’s not a fix for overriding something that is broken. 
+!important is ok in a very small number of circumstances. One example is error messages which always display the same way - red and bold. We don’t have a !superimportant so if you have to use !important to override something else, then the something else is too specific to start with. Go back and reduce the specificity of the selector that you need to use !important to override.
+Do not add more specificity, because it can make it hard for future development. 
+
+It’s hard to override an !important for a reason and it’s meant to be used to make sure a rule works as it should. It’s not a fix for overriding something that is broken. 
 
 **Yes**
 
@@ -64,10 +72,11 @@ Check the specificity of your CSS. It should be a flat line or a gentle incline 
 
 ##Commenting your code
 
-- If you have to think about it then it should be commented.
-- If it’s over a screen length then you probably should provide comments to note the code so it can be navigated. If it’s very long then think about adding an index.
-- There’s no such thing as too many comments (probably)
-- There’s nothing wrong with a bit of humor in a comment, but don’t make if offensive! People can read the CSS publicly.
+- If you have to think about how to make work, provide a comment to share your thinking (and remind your future self)
+- Did you find the answer to your problem in a web page? Include the URL to that page.
+- If your file is longer than a screen length then provide comments to note the code so it can be navigated - split it into sections with comments. If it’s very long then think about adding an index.
+- Comment frequently. Are you concerned that you have too many comments? Don't be - everyone likes good documentation.
+- There’s nothing wrong with a bit of humour in a comment, but don’t make it offensive! People can read the CSS publicly.
 
 ##CSS methodologies
 
@@ -79,7 +88,7 @@ There is no overall structure to the css. This is ok on small sites/microsites.
 ###BEM
 [http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)
 
-A block consist of elements such as headers, search bars, primary navigation, widgets, list panels etc. Basically anything that can be a stand alone item. The block should be named something sensible and relevant but not a stupidly long name like .this-is-the-block-where-the-results-sit-in. try something like .events-list assuming there is no other event list blocks. If there is then make it a little more specific so there is no name clash!
+A block consist of elements such as headers, search bars, primary navigation, widgets, list panels etc. Basically anything that can be a stand alone item. The block should be named something sensible and relevant but not a stupidly long name like .this-is-the-block-where-the-results-sit-in. Try something like .events-list assuming there is no other event list blocks. If there is then make it a little more specific so there is no name clash!
 
 The elements within the block should all be prefixed with the block name followed by a double underscore and any html selectors are nested in the css if they are not explicitly named.
 
@@ -98,11 +107,18 @@ Generic items within the block are ok not to have a class on
     .block-name ul li {...}
     .block-name span {...}
 
-Try to nest no more that 3 levels, preferably 2, so if you have a .block-name ul li a span either give the spans a .block-name__some-class and style that or drop the li a out of the selector.
+Try to nest no more than 3 levels, preferably 2. For example, the following selector is too long:
+
+    .block-name ul li a span {...}
+
+Either:
+
+- give the span a class e.g .block-name__some-class 
+- drop the li a out of the selector.
 
 Global styles
 
-If there are any global styles that needs to be used in many blocks use a prefix of .global__. Using a close button as an example:
+If there are any global styles that need to be used in several blocks, use a prefix of .global__. Using a close button as an example:
 
 **Global item**
 
@@ -112,19 +128,13 @@ If there are any global styles that needs to be used in many blocks use a prefix
 
     .block-name__button-close
 
-It might mean a few more classes on things but it should keep them all unique so we don't getting any clashes as blocks get moves/updated over time etc.
+This might create a few more classes on things but it should keep them all unique and reduce the possibility of clashes as blocks get moves/updated over time etc.
 
 
 
 ###OOCSS
-I don’t know about this. yet
-
-
-
-
-
-
-
+Object Orientated CSS [http://appendto.com/2014/04/oocss/](http://appendto.com/2014/04/oocss/)
+If you've used Bootstrap, then you've used a OOCSS. 
 
 ##State names
  
@@ -135,8 +145,6 @@ I don’t know about this. yet
 These are used only to define the state of an object. They should be prefixed with .is- or .has-. 
 
 These should never be styled as a stand alone classes as is as they always are tied to an element or module. The state classes should be wrapped within the module or element:
-
-
 
 **Yes**
 
@@ -155,7 +163,7 @@ These should never be styled as a stand alone classes as is as they always are t
 
 Utility classes are used for more global styling. Ideally they should be prefixed with .u- to denote what they are for, but since there are only a few it’s acceptable to have it without the .u-. 
 
-**Yes**
+**Yes, and preferred**
 
     .u-right { … }
     .u-left { … }
