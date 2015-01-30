@@ -6,7 +6,7 @@ permalink: /javascript/
 
 #Where to put the javascript?
 
-Unless it's essential for it to be in the <head> of the HTML document, place all javascriptvjust before the closing body tag of a page.
+Unless it's essential for it to be in the head of the HTML document, place all javascriptvjust before the closing body tag of a page.
 
 ##What's essential for the <head>?
 
